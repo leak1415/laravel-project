@@ -11,13 +11,12 @@
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control" id="name"
-                            aria-describedby="emailHelp">
+                        <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
                     </div>
                     <div class="mb-3">
                         <label for="dec" class="form-label">Description</label>
                         <div class="form-floating">
-                            <textarea name ="dec" class="form-control" id="dec"></textarea>
+                            <textarea name="dec" class="form-control" id="dec"></textarea>
                         </div>
                     </div>
 

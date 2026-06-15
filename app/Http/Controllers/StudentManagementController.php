@@ -25,7 +25,9 @@ class StudentManagementController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
             'phone' => ['required', 'string', 'max:255'],
-            'student_id' => ['required', 'integer'],
+            'student_id' => ['required', 'integer', 'regex:/^[1-9][0-9]*$/'],
+        ], [
+            'student_id.regex' => "Student ID can't start with number 0",
         ]);
 
         StudentManagement::create($validated);
@@ -55,7 +57,9 @@ class StudentManagementController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
             'phone' => ['required', 'string', 'max:255'],
-            'student_id' => ['required', 'integer'],
+            'student_id' => ['required', 'integer', 'regex:/^[1-9][0-9]*$/'],
+        ], [
+            'student_id.regex' => "Student ID can't start with number 0",
         ]);
 
         $student->update($validated);

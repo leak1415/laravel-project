@@ -12,11 +12,4 @@ Route::get('/user', function (Request $request) {
 Route::apiResource('products', ProductController::class);
 
 // route apiResource categories
-Route::apiResource('categories',CategoryController::class)
-->names([
-    'index'=>'api.categories.index',
-    'store'=>'api.categories.store',
-    'show'=>'api.categories.show',
-    'update'=>'api.categories.update',
-    'destroy'=>'api.categories.destroy',
-]);
+Route::apiResource('categories', CategoryController::class);

@@ -29,7 +29,7 @@ class CategoryController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name'        => 'required|string|max:255',
-            'dec' => 'required|string',
+            'description' => 'required|string',
             'is_active'   => 'sometimes|boolean',
         ]);
 
@@ -71,7 +71,7 @@ class CategoryController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name'        => 'required|string|max:255',
-            'dec' => 'required|string',
+            'description' => 'required|string',
             'is_active'   => 'sometimes|boolean',
         ]);
 

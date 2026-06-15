@@ -29,7 +29,7 @@ class CategoryController extends Controller
         Category::create(
             [
                 'name' => request()->name,
-                'dec' => request()->dec,
+                'description' => request()->description,
             ]
         );
 
@@ -51,7 +51,7 @@ class CategoryController extends Controller
         $category->update(
             [
                 'name' => request()->name,
-                'dec' => request()->dec,
+                'description' => request()->description,
             ]
         );
 
