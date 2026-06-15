@@ -27,11 +27,11 @@
                             value="{{ $product->price }}">
                     </div>
 
-                    <!-- Quantity -->
+                    <!-- Stock -->
                     <div class="mb-3">
-                        <label for="qty" class="form-label">Quantity</label>
-                        <input type="number" name="qty" class="form-control" id="qty"
-                            value="{{ $product->qty }}">
+                        <label for="stock" class="form-label">Stock</label>
+                        <input type="number" name="stock" class="form-control" id="stock"
+                            value="{{ $product->stock }}">
                     </div>
 
                     <!-- Category -->

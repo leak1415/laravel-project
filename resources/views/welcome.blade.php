@@ -23,8 +23,9 @@
             <a href="{{ route('products.index') }}">Products</a>
         </li>
         <li>
-            <a href="{{ route('products.index') }}">Students</a>
+            <a href="{{ route('students.index') }}">Students</a>
         </li>
+
     </ul>
 </body>
 

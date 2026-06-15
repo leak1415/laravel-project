@@ -11,7 +11,7 @@
                     <th>#</th>
                     <th>Name</th>
                     <th>Price</th>
-                    <th>Qty</th>
+                    <th>Stock</th>
                     <th>Category</th>
                     <th>Action</th>
                 </tr>
@@ -22,7 +22,7 @@
                         <td>{{ $index + 1 }}</td>
                         <td>{{ $product->name }}</td>
                         <td>{{ $product->price }}</td>
-                        <td>{{ $product->qty }}</td>
+                        <td>{{ $product->stock }}</td>
                         <td>{{ $product->category->name }}</td>
                         <td>
                             <a href="{{ route('products.edit', $product->id) }}">

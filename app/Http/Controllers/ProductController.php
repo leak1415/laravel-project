@@ -35,7 +35,7 @@ class ProductController extends Controller
             [
                 'name' => request()->name,
                 'price' => request()->price,
-                'qty' => request()->qty,
+                'stock' => request()->stock,
                 'category_id' => request()->category_id,
             ]
         );
@@ -72,7 +72,7 @@ class ProductController extends Controller
             [
                 'name' => request()->name,
                 'price' => request()->price,
-                'qty' => request()->qty,
+                'stock' => request()->stock,
                 'category_id' => request()->category_id,
             ]
         );

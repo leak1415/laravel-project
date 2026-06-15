@@ -24,10 +24,10 @@
                         <input type="number" name="price" class="form-control" id="price" step="0.01">
                     </div>
 
-                    <!-- Quantity -->
+                    <!-- Stock -->
                     <div class="mb-3">
-                        <label for="qty" class="form-label">Quantity</label>
-                        <input type="number" name="qty" class="form-control" id="qty">
+                        <label for="stock" class="form-label">Stock</label>
+                        <input type="number" name="stock" class="form-control" id="stock">
                     </div>
 
                     <!-- Category -->

@@ -16,10 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-
-            $table->foreignId('student_id')
-                  ->constrained('students')
-                  ->onDelete('cascade');
             $table->timestamps();
         });
 
