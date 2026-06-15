@@ -135,7 +135,7 @@ class ProductController extends Controller
             'category' => $product->relationLoaded('category') && $product->category ? [
                 'id' => $product->category->id,
                 'name' => $product->category->name,
-                'description' => $product->category->dec,
+                'description' => $product->category->description,
                 'is_active' => $product->category->is_active,
             ] : null,
         ];
